@@ -82,10 +82,13 @@
                 </Menu>
                 <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator6">
                 </MenuItem>
-                <Menu class="javax.swing.JMenu" name="submenuLista2">
+                <Menu class="javax.swing.JMenu" name="submenuListaDoblemente">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="DOBLEMENTE ENLAZADA"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="submenuListaDoblementeMouseClicked"/>
+                  </Events>
                 </Menu>
                 <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator7">
                 </MenuItem>
@@ -171,9 +174,6 @@
     <Component class="javax.swing.JLabel" name="fondoGif">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\doza_\Documents\NetBeansProjects\EstrcturasLineales\src\main\java\Imagenes\animated-triangles.gif"/>
-        </Property>
         <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
           <ComponentRef name="Form"/>
         </Property>

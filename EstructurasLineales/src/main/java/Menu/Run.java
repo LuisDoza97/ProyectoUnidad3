@@ -26,7 +26,6 @@ public class Run {
     });
         
         // A partir de aqui escribe tus codigos espagueti XD
-        PilaEstatica objetoPilaE = new PilaEstatica ();
-        objetoPilaE.msg();
+        
     }
 }

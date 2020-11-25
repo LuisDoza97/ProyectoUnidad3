@@ -48,7 +48,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jSeparator5 = new javax.swing.JPopupMenu.Separator();
         submenuLista3 = new javax.swing.JMenu();
         jSeparator6 = new javax.swing.JPopupMenu.Separator();
-        submenuLista2 = new javax.swing.JMenu();
+        submenuListaDoblemente = new javax.swing.JMenu();
         jSeparator7 = new javax.swing.JPopupMenu.Separator();
         submenuLista4 = new javax.swing.JMenu();
         menuAyuda = new javax.swing.JMenu();
@@ -66,7 +66,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         textoBienvenida.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         fondoGif.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fondoGif.setIcon(new javax.swing.ImageIcon("C:\\Users\\doza_\\Documents\\NetBeansProjects\\EstrcturasLineales\\src\\main\\java\\Imagenes\\animated-triangles.gif")); // NOI18N
         fondoGif.setLabelFor(this);
         fondoGif.setToolTipText("");
         fondoGif.setAutoscrolls(true);
@@ -120,8 +119,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         menuLista.add(submenuLista3);
         menuLista.add(jSeparator6);
 
-        submenuLista2.setText("DOBLEMENTE ENLAZADA");
-        menuLista.add(submenuLista2);
+        submenuListaDoblemente.setText("DOBLEMENTE ENLAZADA");
+        submenuListaDoblemente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                submenuListaDoblementeMouseClicked(evt);
+            }
+        });
+        menuLista.add(submenuListaDoblemente);
         menuLista.add(jSeparator7);
 
         submenuLista4.setText("DOBLEMENTE ENLAZADA CIRCULAR");
@@ -165,6 +169,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         objMenuPilaD.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_submenuPila2MouseClicked
+
+    private void submenuListaDoblementeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submenuListaDoblementeMouseClicked
+        // TODO add your handling code here:
+        MenuListaDoblementeEnlazada objetoLDE = new MenuListaDoblementeEnlazada();        
+        objetoLDE.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_submenuListaDoblementeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -221,9 +232,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu submenuCola1;
     private javax.swing.JMenu submenuCola2;
     private javax.swing.JMenu submenuLista1;
-    private javax.swing.JMenu submenuLista2;
     private javax.swing.JMenu submenuLista3;
     private javax.swing.JMenu submenuLista4;
+    private javax.swing.JMenu submenuListaDoblemente;
     private javax.swing.JMenu submenuPila1;
     private javax.swing.JMenu submenuPila2;
     private javax.swing.JLabel textoBienvenida;
